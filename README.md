@@ -69,7 +69,7 @@ This step is essential to prepare structured TextGrids with a single tier (speec
 
 ## Citation
 If you use the R scripts, please cite:
-> TEIXEIRA, L.A.S.; TILSEN, S. *EnvelopeMetricsL2Rhythm* (v1.1.2). R Script, 2025.
+> TEIXEIRA, L.A.S.; TILSEN, S. *EnvelopeMetricsL2Rhythm* (v1.0.0). R Script, 2025.
 If you use the MATLAB scripts, please cite:
 > TILSEN, S. *EnvelopeMetrics* MATLAB Script, 2025. 
 
