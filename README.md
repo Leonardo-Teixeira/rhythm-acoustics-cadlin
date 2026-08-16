@@ -12,8 +12,18 @@ The preprocessing pipeline first identifies continuous speech regions using Voic
 
 ## Repository structure
 
-* `data/` — derived and preprocessed datasets used in the workflow, including `chunk_metrics.csv`, `all_chunk_info.csv`, `all_speech_activity_intervals.csv`, and `chunk_metrics_grid_intervals.csv`.
-* `scripts/` — R and MATLAB scripts used for envelope extraction, speech-activity detection, chunk segmentation, TextGrid generation, and extraction of envelope-based rhythm metrics.
+- `data/` — derived and preprocessed datasets used in the workflow, including:
+  - `chunk_metrics.csv` — final chunk-level envelope-based measurements used in the analyses;
+  - `all_chunks_info.csv` — onset, offset, duration, and associated metadata for the analysis chunks;
+  - `all_speech_activity_intervals.csv` — speech and silence intervals identified during Voice Activity Detection;
+  - `chunk_metrics.xlsx` — spreadsheet version of the chunk-level measurement table;
+  - `Grids/` — Praat TextGrids representing the detected speech/silence intervals.
+
+- `1_extract_envelope.R` — amplitude-envelope extraction.
+- `2_extract_intervals.R` — Voice Activity Detection and speech/silence interval extraction.
+- `3_extract_chunks.R` — generation of analysis chunks within detected speech intervals.
+- `4_1_extract_env_metrics.m` — extraction of envelope-based rhythm metrics.
+- `4_2_gen_voiceactivity_grids.m` — generation of Praat TextGrids from speech-activity intervals.
 
 ## Requirements
 
